@@ -1,0 +1,4 @@
+{
+    "input_directory" : "data/input",
+    "supported_extension" : ".csv"
+}
