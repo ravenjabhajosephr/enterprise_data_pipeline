@@ -1,4 +1,5 @@
 {
     "input_directory" : "data/input",
-    "supported_extension" : ".csv"
+    "supported_extension" : ".csv",
+    "log_level" : "info"
 }

@@ -1,35 +1,27 @@
+import logging
 from app.config import load_settings
 from app.file_handler import input_scan_files
 from app.logger import setup_logger
 
-def main():
-    logger = setup_logger()
+logger = logging.getLogger(__name__)
 
+def main():
+    try:
+        settings = load_settings()
+    except Exception as e:
+        print(f"Critical error (Config file not found): {e}")
+        return
+    
+    setup_logger(settings)
     logger.info("Pipeline started")
 
     try:
-        settings = load_settings()
-        logger.info("Settings loaded")
-    except Exception as e:
-        logger.error("Setting configuration is missing: ", e)
-        return
-
-    try:
         files = input_scan_files(settings)
-
         if files is None:
-            logger.error("The input directory does not exists or invalid")
+            logger.error("File Scan failed")
             return 
-
-        if(len(files) == 0):
-            logger.warning("No input file was found")
-        else:
-            file_count = len(files)
-            logger.info(f"{file_count} supported files found")
-            for file in files:
-                logger.info(f"File detected: {file}") 
     except Exception as e:
-        logger.error("Error while scanning input files", e)
+        logger.error(f"Error while scanning input files: {e}")
 
     logger.info("Pipeline completed successfully")
 
