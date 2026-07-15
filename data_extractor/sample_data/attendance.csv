@@ -1,0 +1,11 @@
+EmployeeID,Name,Date,CheckIn,CheckOut,Status
+E101,John Doe,2026-07-01,08:55,17:02,Present
+E102,Jane Smith,2026-07-01,09:05,17:00,Late
+E103,Bob Johnson,2026-07-01,08:47,16:58,Present
+E104,Alice Brown,2026-07-01,,,Absent
+E101,John Doe,2026-07-02,08:50,17:05,Present
+E102,Jane Smith,2026-07-02,08:58,17:01,Present
+E103,Bob Johnson,2026-07-02,09:15,17:00,Late
+E104,Alice Brown,2026-07-02,08:52,16:55,Present
+E101,John Doe,2026-07-03,08:54,17:00,Present
+E102,Jane Smith,2026-07-03,,,Sick Leave
