@@ -1,0 +1,5 @@
+INFO: Employee E101 checked in at 08:55
+INFO: Employee E102 checked in at 09:05
+WARNING: Employee E104 absent
+ERROR: Missing check-in for E102 on 2026-07-03
+INFO: Employee E103 checked out at 17:00

@@ -1,0 +1,18 @@
+[
+  {
+    "EmployeeID": "E101",
+    "Name": "John Doe",
+    "Date": "2026-07-01",
+    "CheckIn": "08:55",
+    "CheckOut": "17:02",
+    "Status": "Present"
+  },
+  {
+    "EmployeeID": "E104",
+    "Name": "Alice Brown",
+    "Date": "2026-07-01",
+    "CheckIn": null,
+    "CheckOut": null,
+    "Status": "Absent"
+  }
+]

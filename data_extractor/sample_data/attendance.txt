@@ -1,0 +1,5 @@
+EmployeeID,Name,Date,CheckIn,CheckOut,Status
+E101,John Doe,2026-07-01,08:55,17:02,Present
+E102,Jane Smith,2026-07-01,09:05,17:00,Late
+E103,Bob Johnson,2026-07-01,08:47,16:58,Present
+E104,Alice Brown,2026-07-01,,,Absent
