@@ -14,7 +14,7 @@ class DataExtractor:
         return Path(self.file_path).stat().st_size
 
     def _read_csv(self):
-        logger.info(f"Reading csv file...")
+        logger.info(f"Reading csv file: {self.file_path}")
         try:
             if self._get_file_size() == 0:
                 raise ValueError(f"File is empty: {self.file_path}")
@@ -28,7 +28,7 @@ class DataExtractor:
             raise RuntimeError(f"Error in reading CSV file: {self.file_path} | {e}")
         
     def _read_excel(self):
-        logger.info("Reading excel file...")
+        logger.info(f"Reading excel file: {self.file_path}")
         try:
             if self._get_file_size() == 0:
                 raise ValueError(f"File is empty: {self.file_path}")
@@ -42,7 +42,7 @@ class DataExtractor:
             raise RuntimeError(f"Error in reading excel file: {self.file_path} | {e}")
         
     def _read_json(self):
-        logger.info("Reading json file...")
+        logger.info(f"Reading json file: {self.file_path}")
         try:
             if self._get_file_size() == 0:
                 raise ValueError(f"File is empty: {self.file_path}")
@@ -56,7 +56,7 @@ class DataExtractor:
             raise RuntimeError(f"Error in reading JSON file: {self.file_path} | {e}")
     
     def _read_txt(self):
-        logger.info("Reading txt file...")
+        logger.info(f"Reading txt file: {self.file_path}")
         try:
             if self._get_file_size() == 0:
                 raise ValueError(f"File is empty: {self.file_path}")
